@@ -69,14 +69,29 @@
           </p>
         </div>
 
-        <div class="card">
-          <h2>Picture Gallery</h2>
-          <div class="gallery">
-            <div class="gallery-box">Image 1</div>
-            <div class="gallery-box">Image 2</div>
-            <div class="gallery-box">Image 3</div>
-          </div>
-        </div>
+        <<div class="gallery">
+  <div class="gallery-box">
+    <img
+      src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/566204409_1449287699703914_6559176403170372068_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=SwfZqIJ2-W0Q7kNvwH0dYdw&_nc_oc=AdmMrs0VnxFlsm_Z8aAhIOkrvLnH4YVt4DqQ_DuUMswVncPStRRazc1K7QphN_8Ixbo&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=gkqy2bCRcJmd8tWTPcBVLA&oh=00_AfsRclsJd1v3_DTeRzgf1ld1DkixcnZRL26lvYTyjVMDJw&oe=69858F"
+      alt="Gallery Image 1"
+    >
+  </div>
+
+  <div class="gallery-box">
+    <img
+      src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/531595767_1396356714997013_6451182489435695655_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rdKaGsMvBDsQ7kNvwGYw5o9&_nc_oc=AdlvKEL9w4kz5bIbDfiUR3J9n4vdatREyuG96QhGQSPnraSydOneSLkpn3Wpfa5LBvA&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=TZFVxnLnQt0NkdqA2RSpUw&oh=00_AftOogztcwrUdim3mCpZEPbvk0feGqLJ-jfpKUGgcIa5Mw&oe=698563ED"
+      alt="Gallery Image 2"
+    >
+  </div>
+
+  <div class="gallery-box">
+    <img
+      src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t51.75761-15/464602064_18056289976882972_3613618031270291697_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nLJ-DD0hpK8Q7kNvwGZ03Q9&_nc_oc=AdlfSRaZ1G-_CVr-c6Tens_pT9Ay5vOYsDayiJNry90QlJVW9bV-POlXEJF7_Y7OpbM&_nc_zt=23&_nc_ht=scontent.fmnl8-2.fna&_nc_gid=Q2rKYhCtQwm2cgImWM8aiw&oh=00_AfsInHDhNTzXgAiBCkuTyoMlieWeYMy1nWW6MggTURr5-A&oe=69856B0D"
+      alt="Gallery Image 3"
+    >
+  </div>
+</div>
+
 
       </section>
 
@@ -173,6 +188,28 @@ body {
   font-weight: bold;
 }
 
+.gallery-box {
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 95, 162, 0.6);
+}
+
 /* SIDEBAR */
 .sidebar {
   background: #1f1b30;
@@ -193,4 +230,6 @@ body {
   background: #120f1f;
   color: #aaa;
 }
+
+
 </style>
