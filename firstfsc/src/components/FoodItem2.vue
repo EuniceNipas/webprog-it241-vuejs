@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       name: 'Little Lad',
-      message: 'I'm a little lad who loves berries and cream 🕺 ( I hope u get my reference 🙏)'
+      message: 'Im a little lad who loves berries and cream 🕺  I hope u get my reference 🙏'
     }
   }
 };
